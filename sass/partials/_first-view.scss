@@ -1,0 +1,155 @@
+.first-view {
+  @include box;
+  @media (max-width: 1200px) {
+    height: 444px;
+  }
+  	@media (max-width: 730px) {
+      height: 574px;
+    }
+  .info {
+    @include box;
+    width: 615px;
+    float: left;
+    margin: 180px 55px 0 0;
+    @media (max-width: 1366px) {
+      width: 462px;
+      margin: 114px 290px 0 0;
+    }
+    @media (max-width: 1200px) {
+      margin: 70px 0 0 0;
+    }
+    @media (max-width: 730px) {
+      margin: 28px 0 0 0;
+      width: 100%;
+
+    }
+    h3 {
+      @include fonts;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 88px;
+      @include fonts-gradient-yellow;
+      margin: 0 0 30px 0;
+      @media (max-width: 1366px) {
+        font-size: 54px;
+        line-height: 66px;
+        margin: 0 0 24px 0;
+      }
+      @media (max-width: 730px) {
+        font-size: 30px;
+        line-height: 37px;
+        margin: 0 0 20px 0;
+      }
+    }
+    p {
+      @include fonts;
+      @media (max-width: 1366px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @media (max-width: 730px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      br {
+        @include box;
+        @media (max-width: 730px) {
+          display: none;
+        }
+      }
+    }
+    p.span {
+        @include fonts;
+        margin: 5px 0 118px 0;
+        @media (max-width: 1366px) {
+          margin: 5px 0 102px 0;
+        }
+        @media (max-width: 1200px) {
+          margin: 5px 0 90px 0;
+        }
+        @media (max-width: 730px) {
+          margin: 5px 0 304px 0;
+        }
+      span.blue {
+        @include fonts;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        margin: 0 14px 0 0;
+        @include fonts-gradient-blue;
+          @media (max-width: 1366px) {
+            font-size: 30px;
+            line-height: 37px;
+            margin: 0 10px 0 0;
+          }
+          @media (max-width: 730px) {
+            font-size: 20px;
+            line-height: 25px;
+          }
+      }
+      span.yellow {
+        @include fonts;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        @include fonts-gradient-yellow;
+        @media (max-width: 1366px) {
+          font-size: 30px;
+          line-height: 37px;
+        }
+        @media (max-width: 730px) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+    .exchanger {
+      @include box;
+      width: 174px;
+      height: 27px;
+      margin: 10px 0 0 0;
+      @media (max-width: 1200px) {
+        margin: 12px 0 0 0;
+      }
+      @media (max-width: 730px) {
+        margin: 4px 0 0 0;
+      }
+      a {
+        @include box;
+        width: 174px;
+        height: 27px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .image {
+      @include box;
+      float: right;
+      width: 500px;
+      height: 517px;
+      top: 110px;
+      @media (max-width: 1366px) {
+        width: 418px;
+        height: 432px;
+        top: 62px;
+      }
+      @media (max-width: 1200px) {
+        position: relative;
+        width: 270px;
+        height: 279px;
+        top: -280px;
+      }
+      @media (max-width: 730px) {
+        top: -400px;
+        float: none;
+        left: 10px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+  }
+}

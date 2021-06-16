@@ -1,0 +1,25 @@
+/* wrapper */
+#wrapper {
+	@include box;
+	background-color: #05134D;
+}
+.layout {
+	margin:0 auto;
+	position:relative;
+	width:1172px;
+	@media (max-width: 1366px) {
+		width:1170px;
+	}
+	@media (max-width: 1200px) {
+		width:688px;
+	}
+	@media (max-width: 730px) {
+		width:288px;
+	}
+}
+main {
+	@include box;
+}
+#content{
+	@include box;
+}

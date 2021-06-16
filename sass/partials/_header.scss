@@ -1,0 +1,107 @@
+header {
+	@include box;
+	.logo {
+		@include box;
+		float: left;
+		width: 220px;
+	  height: 62px;
+		margin: 40px 0 0 0;
+		@media (max-width: 1366px) {
+			width: 170px;
+			height: 47px;
+		}
+		@media (max-width: 730px) {
+			width: 136px;
+			height: 38px;
+			margin: 24px 0 0 0;
+		}
+		a {
+			@include box;
+			width: 220px;
+		  height: 62px;
+			@media (max-width: 1366px) {
+				width: 170px;
+				height: 47px;
+			}
+			@media (max-width: 730px) {
+				width: 136px;
+				height: 38px;
+			}
+			img {
+				width: 100%;
+			  height: 100%;
+			}
+		}
+		h1 {
+			text-indent: 9999px;
+		}
+	}
+	.button {
+		@include box;
+		@include buttons;
+		@media (max-width: 1366px) {
+			width: 273px;
+			height: 48px;
+		}
+		@media (max-width: 730px) {
+			width: 136px;
+			height: 38px;
+			margin: 26px 0 0 0;
+		}
+		&:hover {
+			@include buttons-hover;
+		}
+		a.full {
+			@include box;
+			width: 100%;
+			height: 100%;
+			@include fonts;
+			line-height: 50px;
+			text-align: center;
+			font-weight: bold;
+			color: #000000;
+			@media (max-width: 1366px) {
+				font-size: 18px;
+				line-height: 48px;
+			}
+			@media (max-width: 730px) {
+				display: none;
+			}
+			&:active {
+				@include a-hover;
+			}
+		}
+		a.short {
+			@include box;
+			width: 100%;
+			height: 100%;
+			@include fonts;
+			line-height: 50px;
+			text-align: center;
+			font-weight: bold;
+			color: #000000;
+			display: none;
+			@media (max-width: 730px) {
+				display: block;
+				font-size: 14px;
+				line-height: 38px;
+				right: 6px;
+				text-align: right;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				background-image: url(../images/exit.png);
+				background-repeat: no-repeat;
+				height: 24px;
+				width: 24px;
+				top: 7px;
+				left: 12px;
+			}
+			&:active {
+				@include a-hover;
+			}
+		}
+	}
+
+}
